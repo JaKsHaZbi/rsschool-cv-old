@@ -33,7 +33,12 @@ a {
           flex-direction: column;
 }
 
-/* Navigation */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 nav {
   overflow: hidden;
   background-color: #e7e7e5;
@@ -98,7 +103,6 @@ a:active {
   color: #0f141e;
 }
 
-/*--Hamburger--*/
 .hamburger {
   display: none;
 }
@@ -225,12 +229,15 @@ a:active {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 20%;
-    margin-right: 0;
+    margin-top: 15%;
+    margin-right: 20px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    gap: 5px;
+    gap: 0px;
+  }
+  nav ul li {
+    padding-top: 0px;
   }
   nav ul li a {
     font-size: 1.5rem;
@@ -247,9 +254,7 @@ a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
   margin-top: 10px;
-  padding: 10px;
   background-color: #e7e7e5;
   -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
@@ -292,12 +297,14 @@ a:active {
 
 /* Box Model */
 main {
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 30px 20px 0;
+  max-width: 960px !important;
+  padding: 30px 30px 0px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
 }
 
 .avatar {
