@@ -283,21 +283,19 @@ a:active {
   --color-orange: #fac300;
 }
 
-/*PRELOADER*/
 #loading {
-  background-color: #e0e3e5;
-  height: 100%;
-  width: 100%;
   position: fixed;
-  z-index: 1000;
-  margin: 0;
-  margin-left: 0;
   top: 0;
   left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  margin-left: 0;
+  background-color: #e0e3e5;
+  z-index: 1000;
 }
 
-/* Box Model */
-main {
+.main {
   max-width: 960px !important;
   padding: 30px 30px 0px;
   -webkit-box-flex: 1;
@@ -489,6 +487,9 @@ code {
 }
 
 @media (max-width: 768px) {
+  .main {
+    padding: 30px 10px 0px;
+  }
   .info {
     display: block;
     text-align: center;
